@@ -49,13 +49,12 @@
     navigation: true
   };
   $.fn.mauGallery.listeners = function(options) {
-    $(".gallery-item").on("click", function() {
-      if (options.lightBox && $(this).prop("tagName") === "IMG") {
-        $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
-      } else {
-        return;
-      }
-    });
+// Délégation d'événements : attache un événement à la galerie entière, pas à chaque élément
+$(".gallery-items-row").on("click", ".gallery-item", function() {
+  if (options.lightBox && $(this).prop("tagName") === "IMG") {
+    $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
+  }
+});
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
     $(".gallery").on("click", ".mg-prev", () =>
