@@ -24,6 +24,12 @@ body {
     font-size: 26px;
 }
 
+.carousel-item img {
+    object-fit: cover; /* Conserve les proportions de l'image */
+    width: 100%;       /* S'adapte à la largeur du conteneur */
+    height: 100%;      /* S'adapte à la hauteur du conteneur */
+}
+
 .nav ul {
     display: flex;
     list-style-type: none;

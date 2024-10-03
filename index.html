@@ -35,16 +35,57 @@
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="..." loading="lazy">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="..." loading="lazy">
+		  
+			<div class="carousel-inner">
+			  <!-- First image -->
+			  <div class="carousel-item active">
+				<picture>
+				  <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-600.webp 600w, 
+								  ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1000.webp 1000w,
+								  ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-2000.webp 2000w"
+						  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw">
+				  <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-2000.webp" class="d-block w-100" alt="..." width="2000" height="1200">
+				</picture>
+			  </div>
+		  
+			  <!-- Second image -->
+			  <div class="carousel-item">
+				<picture>
+				  <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-600.webp 600w, 
+								  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1000.webp 1000w,
+								  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-2000.webp 2000w"
+						  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw">
+				  <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-2000.webp" class="d-block w-100" alt="..." width="2000" height="1200">
+				</picture>
+			  </div>
+		  
+			  <!-- Third image -->
+			  <div class="carousel-item">
+				<picture>
+				  <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-600.webp 600w, 
+								  ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1000.webp 1000w,
+								  ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-2000.webp 2000w"
+						  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw">
+				  <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-2000.webp" class="d-block w-100" alt="..." width="2000" height="1200">
+				</picture>
+			  </div>
 			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="..." loading="lazy">
-			</div>
+		  
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
