@@ -198,17 +198,11 @@ nextImage() {
       }
     },
     filterByTag() {
-      // Réinitialise les classes et styles pour toutes les catégories
-      $(".nav-link").removeClass("active-tag").css({
-          'background-color': '',  // Remet à zéro le fond
-          'color': ''              // Remet à zéro la couleur du texte
-      });
-  
-      // Ajoute la classe et les styles dorés à la catégorie cliquée
-      $(this).addClass("active-tag").css({
-          'background-color': '#BEB45A',  // Couleur dorée pour l'élément actif
-          'color': '#fff'                 // Couleur blanche pour le texte
-      });
+// Réinitialise uniquement la classe pour toutes les catégories
+$(".nav-link").removeClass("active-tag");
+
+// Ajoute la classe active-tag à la catégorie cliquée
+$(this).addClass("active-tag");
   
       // Filtre les images en fonction de la catégorie sélectionnée
       var tag = $(this).data("images-toggle");
@@ -225,11 +219,10 @@ nextImage() {
   
       // Gérer le style spécifique du filtre "Tous"
       if (tag === "all") {
-          $(".nav-link[data-images-toggle='all']").css({
-              'background-color': '#BEB45A',  // Couleur dorée pour "Tous"
-              'color': '#fff'                 // Couleur blanche pour le texte
-          });
-      }
+        $(".nav-link[data-images-toggle='all']").addClass("active-tag"); // Applique la classe active-tag à "Tous"
+    } else {
+        $(".nav-link[data-images-toggle='all']").removeClass("active-tag"); // Supprime la classe active-tag si une autre catégorie est sélectionnée
+    }
   }
   };
 })(jQuery);

@@ -119,11 +119,6 @@ body {
     color: #000; /* Remet la couleur du texte par défaut */
 }
 
-.nav-pills .nav-link.active-tag {
-    background-color: #BEB45A; /* Applique la couleur dorée pour le fond */
-    color: #fff; /* Texte blanc */
-}
-
 /* Forcer les liens non sélectionnés à rester noirs */
 .nav-pills .nav-link {
     color: #000; /* Texte noir pour les liens non sélectionnés */
@@ -131,7 +126,7 @@ body {
 
 /* Styles pour les boutons activés avec .active-tag */
 .nav-pills .nav-link.active-tag {
-    background-color: #BEB45A; /* Couleur dorée pour le fond */
+    background-color: #8E7B3A; /* Nouveau fond doré plus foncé */
     color: #fff; /* Texte blanc */
 }
 
