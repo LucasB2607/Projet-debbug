@@ -126,8 +126,8 @@ body {
 
 /* Styles pour les boutons activés avec .active-tag */
 .nav-pills .nav-link.active-tag {
-    background-color: #8E7B3A; /* Nouveau fond doré plus foncé */
-    color: #fff; /* Texte blanc */
+    background-color: #BEB45A; /* Couleur dorée clair */
+    color: #000; /* Texte noir */
 }
 
 .item-column {
